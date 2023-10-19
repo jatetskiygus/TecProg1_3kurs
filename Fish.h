@@ -1,11 +1,11 @@
 #pragma once
 #include "Base.h"
-class Fish : public Base {
+class fish : public base {
 public:
 	std::string food_type;
 
-	Fish() = default;
-	~Fish() = default;
+	fish() = default;
+	~fish() = default;
 
 	void input() override;
 	void display() override;

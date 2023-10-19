@@ -1,7 +1,7 @@
 #pragma once
 #pragma once
 #include "Base.h"
-class Cat : public Base {
+class cat : public base {
 public:
 	struct owner {
 		std::string FirstName;
@@ -9,8 +9,8 @@ public:
 	};
 	std::string NickName;
 
-	Cat() = default;
-	~Cat() = default;
+	cat() = default;
+	~cat() = default;
 
 	void input() override;
 	void display() override;

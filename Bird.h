@@ -1,12 +1,12 @@
 #pragma once
 #include "Base.h"
-class Bird : public Base {
+class birds : public base {
 public:
 	std::string food_type;
 	std::string habitat;
 
-    Bird() = default;
-    ~Bird() = default;
+    bird() = default;
+    ~bird() = default;
 
     void input() override;
     void display() override;
