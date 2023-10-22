@@ -1,5 +1,18 @@
 #include "Cat.h"
 
+// Конструктор
+Cat::Cat() {
+	animal_type = "Кошка";
+	std::cout << "Объект типа \"" << animal_type << "\" был создан" << std::endl;
+	system("pause");
+}
+
+// Деструктор
+Cat::~Cat() {
+	std::cout << "Объект типа \"" << animal_type << "\" был уничтожен" << std::endl;
+	system("pause");
+}
+
 // Метод внесения данных
 void Cat::input() {
 	std::cout << "Введите породу: ";

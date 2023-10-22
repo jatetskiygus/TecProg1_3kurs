@@ -1,5 +1,32 @@
 #include "fish.h"
 
+// Конструктор
+Fish::Fish() {
+	animal_type = "Рыба";
+	std::cout << "Объект типа \"" << animal_type << "\" был создан" << std::endl;
+	system("pause");
+}
+
+// Коонструктор копирования
+Fish::Fish(const Fish& fish) {
+	breed = fish.breed;
+	color = fish.color;
+	food_type = fish.food_type;
+}
+
+// Конструктор с параметрами
+Fish::Fish(std::string Breed, std::string Color, std::string FoodType) {
+	breed = Breed;
+	color = Color;
+	food_type = FoodType;
+}
+
+// Деструктор
+Fish::~Fish() {
+	std::cout << "Объект типа \"" << animal_type << "\" был уничтожен" << std::endl;
+	system("pause");
+}
+
 // Метод внесения данных
 void Fish::input() {
 	std::cout << "Введите породу: ";

@@ -7,8 +7,8 @@ public:
 	std::string food_type;
 	std::string habitat;
 
-    Bird() = default;
-    ~Bird() = default;
+    Bird();
+    ~Bird();
 
     // Метод внесения данных
     void input() override;

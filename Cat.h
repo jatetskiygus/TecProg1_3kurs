@@ -7,8 +7,8 @@ public:
 	std::string LastName;
 	std::string NickName;
 
-	Cat() = default;
-	~Cat() = default;
+	Cat();
+	~Cat();
 
 	// Метод внесения данных
 	void input() override;

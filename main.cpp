@@ -1,15 +1,21 @@
 #include <iostream>
 #include <string>
+#include <windows.h>
 #include "Keeper.h"
 #include "Fish.h"
 #include "Bird.h"
 #include "Cat.h"
 
+
 int main() {
+    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
     Keeper keeper;
     int choice;
 
     while (true) {
+        system("cls");
         std::cout << "Menu:" << std::endl;
         std::cout << "1. Добавить животное" << std::endl;
         std::cout << "2. Удалить последнее животное" << std::endl;
@@ -20,7 +26,7 @@ int main() {
         std::cout << "0. Выход" << std::endl;
         std::cout << "Ваш выбор: ";
         std::cin >> choice;
-
+        system("cls");
         switch (choice) {
             case 1:
                 int animalType;
@@ -30,7 +36,7 @@ int main() {
                 std::cout << "3. Кошка" << std::endl;
                 std::cout << "Ваш выбор: ";
                 std::cin >> animalType;
-
+                system("cls");
                 if (animalType == 1) {
                     Fish* fish = new Fish;
                     fish->input();
@@ -79,6 +85,7 @@ int main() {
             }
             case 0:
                 return 0;
+                break;
 
             default:
                 std::cout << "Выберите цифру из списка, пожалуйста" << std::endl;

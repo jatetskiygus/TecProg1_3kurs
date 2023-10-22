@@ -1,5 +1,18 @@
 #include "bird.h"
 
+// Конструктор
+Bird::Bird() {
+	animal_type = "Птица";
+	std::cout << "Объект типа \"" << animal_type << "\" был создан" << std::endl;
+	system("pause");
+}
+
+// Деструктор
+Bird::~Bird() {
+	std::cout << "Птичку жалко.." << std::endl;
+	system("pause");
+}
+
 // Метод внесения данных
 void Bird::input() {
 	std::cout << "Введите породу: ";

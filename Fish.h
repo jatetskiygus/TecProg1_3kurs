@@ -5,8 +5,10 @@ class Fish : public base {
 public:
 	std::string food_type;
 
-	Fish() = default;
-	~Fish() = default;
+	Fish(const Fish& fish);
+	Fish(std::string breed, std::string color, std::string food_type);
+	Fish();
+	~Fish();
 
 	// Метод внесения данных
 	void input() override;

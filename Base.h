@@ -9,9 +9,7 @@ public:
 	std::string breed;
 	std::string color;
 
-    base() {
-        std::cout << "Объект типа " << animal_type << " был создан" << std::endl;
-    }
+    base() = default;
      ~base() = default;
 
     virtual void input() = 0; // Метод для ввода данных
